@@ -10,7 +10,7 @@ development:
   database: verimor_sms_development
   password: verimor123
   host: db
-  port: 5432
+  port: 5433
 
 test:
   <<: *default
@@ -18,7 +18,7 @@ test:
   username: verimor
   password: verimor123
   host: db
-  port: 5432
+  port: 5433
 
 production:
   <<: *default
