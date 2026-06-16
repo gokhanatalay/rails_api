@@ -46,7 +46,7 @@ class ApplicationController < ActionController::API
 
 	def authorization_token
 		header = request.headers['Authorization'].to_s
-		match = header.match(/\ABearer Token\s+(.+)\z/)
+		match = header.match(/\ABearer\s+(.+)\z/)
 		match&.captures&.first
 	end
 
